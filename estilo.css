@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* imagem */
+
+img {
+    width: 20em;
+    height: 20em;
+}
+
+body {
+    font-family: Roboto, sans-serif;
+    font-size: 1.4rem;
+}
+
+.content {
+    display: grid;
+    grid-template-areas:
+        ". . . . ."
+        ". hero . form ."
+        ". hero . form ."
+        ". . . . ." 
+    ;
+
+    gap: 8.5rem;
+}
+
+main {
+    grid-area: form;
+}
+
+aside {
+    grid-area: hero;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+
+/* Estilo do Aside */
+
+aside h1 {
+    font-size: 64px;
+    font-weight: 500;
+    line-height: 75px;
+}
+
+aside h1 span, main h2 span {
+    color: #ff5678;
+}
+
+/* Estilo main */
+
+main {
+    width: 60rem;
+    height: 52rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    padding: 4.4rem 5.7rem;
+    border-radius: 12px;
+}
+
+main h2 {
+    max-width: 43rem;
+    font-size: 3.6rem;
+    font-weight: 500;
+}
+
+main .actions {
+    /* text-align: center; */
+    display: flex;
+    flex-flow: column wrap;
+}
+
+main .actions a {
+    border-radius: 1.2rem;
+    text-decoration: none;
+    font: 2.4rem;
+    height: 5.5rem;
+    background-color: #35E6e9;
+    color: #fff;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5.4rem;
+}
+
+main .actions a + a {
+    background-color: #ff5678;
+    margin-top: 4.8rem;
+}
+
+main header {
+    display: flex;
+    gap: 1.8rem;
+    align-items: center;
+}
+
+main header i {
+    font-size: 1.8rem;
+    color: #ff5678;
+}
+
+main footer p {
+    font-size: 1.6rem;
+    margin-top: 8rem;
+}
+
+main footer a {
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    display: block;
+    text-align: center;
+    color: #000;
+}
+
+main form {
+    margin-top: 1.8rem;
+}
+
+main form input  {
+    width: 489px;
+    height: 5.5rem;
+
+
+    background: #ffffff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.15);
+    border-radius: 1.2rem;
+}
+
+main form label {
+    font-size: 1.8rem;
+    font-weight: 400;
+    margin-bottom: 0.2rem;
+    display: block;
+}
+
